@@ -4,7 +4,12 @@
 <head>
 	<!--再會豆腐烏CSS語法引用網址-->
 <link href="https://tauhu.tw/tauhu-oo.css" rel="stylesheet">	
-
+<!--JQUERY 語法引用網址 -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--JQUERY UI(使用者介面/外觀/格式) 語法引用網址 -->
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<!--JQUERY UI(使用者介面/外觀/格式) css語法引用網址 -->
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.0-rc.3/themes/smoothness/jquery-ui.css">
 	<meta charset="UTF-8">
 
 
@@ -23,7 +28,17 @@ text-decoration: underline solid rgb(68, 68, 68);
 font-style: normal;
 font-variant: normal;
 }
+.tauhu{
+	display: none;
+}
 </style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".tauhu-btn").click(function(){
+			$(".tauhu").toggle();
+		});
+	});
+</script>
 </head>
 <body>
 	<div id="header">
@@ -130,7 +145,7 @@ font-variant: normal;
 <br>
 <div class="tauhu">
 
-						<center><p>𠊎係乞食命皇帝嘴，好食懶做，下二擺愛仰般搞𪹚龍？ 𪘒𪹚𫝘𫟧𫠛𫣆𬠖󿕅</p></center>
+						<center><h3>𠊎係乞食命皇帝嘴，好食懶做，下二擺愛仰般搞𪹚龍？ 𪘒𪹚𫝘𫟧𫠛𫣆𬠖󿕅</h3></center></div>
 
 			</ul>
 
